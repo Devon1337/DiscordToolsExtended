@@ -13,12 +13,16 @@ namespace DTE {
     ArrayList mainpath = new ArrayList();
     ArrayList version = new ArrayList();
       
-    
-    
-    // Reloading 
-    
-    public void Disable() {
-      
+    public String Disable(int DisCode, string pluginname) {
+        switch(DisCode) {
+          case 0:
+            consoleDisplay("Plugin Internal Error" + "(" + pluginname + ")");
+            break;
+          case 1:
+          default:
+            
+            
+        }
     }
     
     public void RemovePlugin() {
